@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Feedback</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		label {
+			float: left;
+			width: 150px;
+		}
+
+		#container {
+
+			width: 700px;
+			margin: auto;
+			background-color: beige;
+		}
+
+		main {
+			padding: 50px;
+		}
+
+		#B {
+			display: none;
+		}
+
+		#SV {
+			display: none;
+		}
+
+		#S {
+			display: none;
+		}
+
+		#T {
+			display: none;
+		}
+
+		#P {
+			display: none;
+		}
+
+		#major1 {
+
+			display: none;
+		}
+
+		#major2 {
+			display: none;
+
+		}
+
+		.center {
+			margin-left: auto;
+			margin-right: auto;
+		} 
+	</style>
+</head>
+
+<body class="center">
+	<div id="container">
+
+		<main class="center">
+			<h2>Feedback</h2>
+			<h3>Love something? Hate something? Let us know!</h3>
+			Note : Fields marked with an asterisk(*) are mandatory
+			<br><br>
+			<form method="post" id="myForm">
+				<label>Title*:</label>
+				<input type="radio" name="title" id="miss" value="miss" required="required" />Miss
+				<input type="radio" name="title" id="mr" value="mr" required="required" />Mr.
+				<input type="radio" name="title" id="mrs" value="mrs" required="required" />Mrs.
+				<br><br>
+				<label for="firstName">First Name*:</label>
+				<input type="text" name="firstName" id="firstName" placeholder="First Name" required />
+				<br><br>
+
+				<div id="error_firstName" style="display: none; color: red;">
+					Invalid input for the First Name field. Only text are allowed.
+					<br><br>
+				</div>
+
+				<label for="lastName">Last Name*:</label>
+				<input type="text" name="lastName" id="lastName" placeholder="Last Name" required />
+				<br><br>
+
+				<div id="error_lastName" style="display: none; color: red;">
+					Invalid input for the Last Name field. Only text are allowed.
+					<br><br>
+				</div>
+
+				<label for="emailId">Email Id*:</label>
+				<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" required />
+				<br><br>
+
+				<div id="error_emailId" style="display: none; color: red;">
+					Invalid input for the email Id field. email should end with @northeastern.edu
+					<br><br>
+				</div>
+
+				<label for="phoneNumber">Phone Number*:</label>
+				<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" required />
+				<br><br>
+
+				<div id="error_phoneNumber" style="display: none; color: red;">
+					Invalid input for the phoneNumber field.
+					<br><br>
+				</div>
+
+				<label for="streetAddress1">Street Address 1*:</label>
+				<input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" required />
+				<br><br>
+
+				<div id="error_streetAddress1" style="display: none; color: red;">
+					Invalid input for the streetAddress1 field.
+					<br><br>
+				</div>
+
+				<label for="streetAddress2">Street Address 2:</label>
+				<input type="text" name="streetAddress2" id="streetAddress2" placeholder="address" />
+				<br><br>
+
+				<div id="error_streetAddress2" style="display: none; color: red;">
+					Invalid input for the streetAddress2 field.
+					<br><br>
+				</div>
+
+				<label for="city">City*:</label>
+				<input type="text" name="city" id="city" placeholder="city" required />
+				<br><br>
+
+				<div id="error_city" style="display: none; color: red;">
+					Invalid input for the city field.
+					<br><br>
+				</div>
+
+				<label for="state">State*:</label>
+				<input type="text" name="state" id="state" placeholder="state" required />
+				<br><br>
+
+				<label for="zipcode">ZipCode*:</label>
+				<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required />
+				<br><br>
+
+				<div id="error_state" style="display: none; color: red;">
+					Invalid input for the state field. Only text are allowed.
+					<br><br>
+				</div>
+
+				<label for="campus">Campus*</label>
+				<select id="dropdown_state" onchange="enableRadio(this)" required>
+					<option value="">Select State </option>
+					<option value="B">Boston</option>
+					<option value="SV">Silicon Valley</option>
+					<option value="S">Seattle</option>
+					<option value="T">Toronto</option>
+					<option value="P">Portland</option>
+				</select>
+				<br><br>
+				<div id="clg">
+					<div id="B">
+						<input type="radio" name="r1" id="radio1" unchecked onclick="textboxshow(1)" /> College of
+						Engineering
+						Boston<br />
+
+						<input type="radio" name="r1" id="radio2" unchecked onclick="textboxshow(2)" /> College of
+						Professional
+						Studies Boston<br />
+
+					</div>
+					<div id="SV">
+						<input type="radio" name="r2" id="radio1" unchecked onclick="textboxshow(1)" /> Khoury College
+						of
+						Engineering
+						Silicon Valley <br />
+						<input type="radio" name="r2" id="radio2" unchecked onclick="textboxshow(2)" /> College of
+						Studies
+						Silicon Valley<br />
+
+					</div>
+					<div id="S">
+						<input type="radio" name="r3" id="radio1" unchecked onclick="textboxshow(1)" /> Mills College
+						Seattle<br />
+						<input type="radio" name="r3" id="radio2" unchecked onclick="textboxshow(2)" /> Business School
+						Seattle<br />
+
+					</div>
+					<div id="T">
+						<input type="radio" name="r4" id="radio1" onclick="textboxshow(1)" /> College of Engineering
+						Toronto<br />
+						<input type="radio" name="r4" id="radio2" onclick="textboxshow(2)" /> College of Professional
+						Studies Toronto<br />
+
+					</div>
+					<div id="P">
+						<input type="radio" name="r5" id="radio1" onclick="textboxshow(1)" /> College of Engineering
+						Portland<br />
+						<input type="radio" name="r5" id="radio2" onclick="textboxshow(2)" /> College of Professional
+						Studies Portland<br />
+
+					</div>
+				</div>
+					<br>
+					<div id=txt>
+						<input type="text" id="major1" placeholder="Enter your major for clg1 here">
+
+						<input type="text" id="major2" placeholder="Enter your major for clg2 here">
+						<br>
+					</div>
+
+					<label for="zipcode">How did you hear?*:</label>
+					<input type='checkbox' name="source" value="facebook" /> Facebook
+					<input type='checkbox' name="source" value="google" /> Google
+					<input type='checkbox' name="source" value="yelp" /> Yelp
+					<br><br>
+
+					<label for="comments" required>Comments*:</label>
+					<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25"
+						required></textarea>
+					<br><br>
+					<input type="Submit" onclick="func()" name="sumbit">
+					<input type="Reset">
+					<br><br>
+				
+			</form>
+
+
+
+			<script>
+				function func() {
+					console.log("######")
+					document.getElementById("tbl").style.display = "block";
+				}
+
+				var form = document.getElementById("myForm");
+				//we give event listner to create action on form, Submit is the button on screen and submitted is the function
+				form.addEventListener("submit", submitted);
+
+				var row = 1;
+				var validName = false;
+				var validLName = false;
+				var validEmail = false;
+				var validPhone = false;
+				var validZip = false;
+
+				// regex checks variables
+				var regExName = /^[a-zA-Z]+$/;
+				var regExEmail = /.+@northeastern.edu$/i;
+				// var regExEmailend = /.+@northeastern.edu$/i;
+				var regExPhone = /\d{3}-?\d{3}-\d{4}$/;
+				//write correct regex validation for zip code
+				var regExZip = /^\d{5}(-\d{4})?$/;
+
+
+
+				// $('#dropdown_state').change(function() {$('#major1').val('')});
+
+
+
+
+				//adding events for validation
+				var firstName = document.getElementById("firstName");
+				firstName.addEventListener("input", validate);
+
+				var LastName = document.getElementById("lastName");
+				LastName.addEventListener("input", validate);
+
+				var emailId = document.getElementById("emailId");
+				emailId.addEventListener("input", validate);
+
+
+				var phoneNumber = document.getElementById("phoneNumber");
+				phoneNumber.addEventListener("input", validate);
+
+				var zipcode = document.getElementById("zipcode");
+				zipcode.addEventListener("input", validate);
+
+
+
+
+
+				//defining the function
+				function validate(e) {
+					//collecting the value in local variable value
+					var value = e.target.value;
+					console.log(value);
+					var type = this.id;
+					var em = "error_" + type;
+
+					switch (type) {
+						case "firstName":
+							if (!value.trim().match(regExName)) {
+								document.getElementById(em).style.display = "block";
+								this.style.border = "2px solid red";
+							}
+							else {
+								document.getElementById(em).style.display = "none";
+								this.style.border = "";
+								validName = true;
+							}
+							break;
+						case "lastName":
+							if (!value.trim().match(regExName)) {
+								document.getElementById(em).style.display = "block";
+								this.style.border = "2px solid red";
+							}
+							else {
+								document.getElementById(em).style.display = "none";
+								this.style.border = "";
+								validLName = true;
+							}
+							break;
+						case "phoneNumber":
+							if (!value.trim().match(regExPhone)) {
+								document.getElementById(em).style.display = "block";
+								this.style.border = "2px solid red";
+							}
+							else {
+								document.getElementById(em).style.display = "none";
+								this.style.border = "";
+								validPhone = true;
+							}
+							break;
+
+						case "emailId":
+							if (!value.trim().match(regExEmail)) {
+								document.getElementById(em).style.display = "block";
+								this.style.border = "2px solid red";
+							}
+							else {
+								document.getElementById(em).style.display = "none";
+								this.style.border = "";
+								validEmail = true;
+							}
+							break;
+
+						case "zipcode":
+							if (!value.trim().match(regExZip)) {
+								document.getElementById(em).style.display = "block";
+								this.style.border = "2px solid red";
+							}
+							else {
+								// document.getElementById(em).style.display = "none";
+								// this.style.border = "";
+								validZip = true;
+							}
+							break;
+
+					}
+
+
+				}
+				function submitted(e) {
+					e.preventDefault();
+					console.log("submitted")
+					if (validName && validLName && validEmail && validPhone && validZip) {
+						alert("Data Saved Sucessfully!")
+
+						document.getElementById("tbl").style.display = "block";
+						// var Title = document.getElementsByName("title").value;
+						var FName = document.getElementById("firstName").value;
+						var Lname = document.getElementById("lastName").value;
+						var email = document.getElementById("emailId").value;
+						var phone = document.getElementById("phoneNumber").value;
+						var streetAddress1 = document.getElementById("streetAddress1").value;
+
+						var streetAddress2 = document.getElementById("streetAddress2").value;
+						var city = document.getElementById("city").value;
+						var state = document.getElementById("state").value;
+						var zipcode = document.getElementById("zipcode").value;
+						// var major = document.getElementById
+						// var checkboxx=document.getElementsByName("source").value;
+						var comment = document.getElementById("comments").value;
+
+						var newRow = tbl.insertRow(row);
+						var cell1 = newRow.insertCell(0);
+						var cell2 = newRow.insertCell(1);
+						var cell3 = newRow.insertCell(2);
+						var cell4 = newRow.insertCell(3);
+						var cell5 = newRow.insertCell(4);
+						var cell6 = newRow.insertCell(5);
+						var cell7 = newRow.insertCell(6);
+						var cell8 = newRow.insertCell(7);
+						var cell9 = newRow.insertCell(8);
+						var cell10 = newRow.insertCell(9);
+
+						// cell1.innerHTML=Title ;
+						cell1.innerHTML = FName;
+						cell2.innerHTML = Lname;
+						cell3.innerHTML = email;
+						cell4.innerHTML = phone;
+						cell5.innerHTML = streetAddress1;
+						cell6.innerHTML = streetAddress2;
+						cell7.innerHTML = city;
+						cell8.innerHTML = state;
+						cell9.innerHTML = zipcode;
+						// cell10.innerHTML="Facebook";
+						cell10.innerHTML = comment;
+						document.getElementById("myForm").reset();
+						document.getElementById("B").style.display = "none";
+						document.getElementById("SV").style.display = "none"
+						document.getElementById("S").style.display = "none"
+						document.getElementById("T").style.display = "none"
+						document.getElementById("P").style.display = "none"
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "none";
+						document.getElementById("major1").value = "";
+						document.getElementById("major2").value = "";
+						row++;
+
+
+
+					}
+					else {
+						alert("Please enter correct information")
+						// window.location
+
+					}
+				}
+				//function to get values of dropdown
+				function enableRadio(ans) {
+
+					console.log(ans.value);
+
+
+					if (ans.value == "B") {
+						document.getElementById("B").style.display = "block";
+						document.getElementById("SV").style.display = "none"
+						document.getElementById("S").style.display = "none"
+						document.getElementById("T").style.display = "none"
+						document.getElementById("P").style.display = "none"
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "none";
+						document.getElementById("major1").value = "";
+						document.getElementById("major2").value = "";
+
+					}
+					else if (ans.value == "SV") {
+						document.getElementById("B").style.display = "none";
+						document.getElementById("SV").style.display = "block"
+						document.getElementById("S").style.display = "none"
+						document.getElementById("T").style.display = "none"
+						document.getElementById("P").style.display = "none"
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "none";
+						document.getElementById("major1").value = "";
+						document.getElementById("major2").value = "";
+					}
+					else if (ans.value == "S") {
+						document.getElementById("B").style.display = "none";
+						document.getElementById("SV").style.display = "none"
+						document.getElementById("S").style.display = "block"
+						document.getElementById("T").style.display = "none"
+						document.getElementById("P").style.display = "none"
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "none";
+						document.getElementById("major1").value = "";
+						document.getElementById("major2").value = "";
+					}
+					else if (ans.value == "T") {
+						document.getElementById("B").style.display = "none";
+						document.getElementById("SV").style.display = "none"
+						document.getElementById("S").style.display = "none"
+						document.getElementById("T").style.display = "block"
+						document.getElementById("P").style.display = "none"
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "none";
+						document.getElementById("major1").value = "";
+						document.getElementById("major2").value = "";
+					}
+					else if (ans.value == "P") {
+
+						document.getElementById("B").style.display = "none";
+						document.getElementById("SV").style.display = "none"
+						document.getElementById("S").style.display = "none"
+						document.getElementById("T").style.display = "none"
+						document.getElementById("P").style.display = "block"
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "none";
+						document.getElementById("major1").value = "";
+						document.getElementById("major2").value = "";
+					}
+					else {
+						document.getElementById("B").style.display = "none";
+						document.getElementById("SV").style.display = "none"
+						document.getElementById("S").style.display = "none"
+						document.getElementById("T").style.display = "none"
+						document.getElementById("P").style.display = "none"
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "none";
+						document.getElementById("major1").value = "";
+						document.getElementById("major2").value = "";
+
+					}
+
+				}
+				function textboxshow(val) {
+					if (val == 1) {
+						document.getElementById("major1").style.display = "block";
+						document.getElementById("major2").style.display = "none";
+					}
+					else if (val == 2) {
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "block";
+
+					}
+					else {
+						document.getElementById("major1").style.display = "none";
+						document.getElementById("major2").style.display = "none";
+						// major1
+						// document.getElementById("major1").checked = "false";
+					}
+				}
+
+
+
+
+
+			</script>
+		</main>
+	</div>
+
+</body>
+<table id="tbl">
+	<tr>
+		<!-- <th>Title</th> -->
+		<th>Firse Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Phone Number</th>
+		<th>Street Address 1</th>
+		<th>Street Address 2</th>
+		<th> City</th>
+		<th>State</th>
+		<th>Zip Code</th>
+		<!-- <th>Campus</th>
+		<th>Major</th> -->
+		<!-- <th>How did you hear</th> -->
+		<th>Comment</th>
+
+	</tr>
+</table>
+
+</html>

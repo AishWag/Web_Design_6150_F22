@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(120deg, #7a9aae, #724b83);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 650px;
+    
+    background: white;
+    border-radius: 10px;
+}
+
+.center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.container {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.container .formgroup {
+    position: relative;
+    margin: 15px 0;
+}
+
+.formgroup input {
+    width: 100%;
+    padding: 0, 5px;
+    height: 65px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+}
+
+.formgroup label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #0c0c0c;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+.formgroup input:focus~label,
+.formgroup input:focus~label {
+    top: -4px;
+    color: #724b83;
+}
+
+.formgroup input:focus~span::before,
+.formgroup input:valid~span::before {
+    width: 100%;
+}
+
+.btn2 {
+    
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #724b83;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.btn2:hover {
+    background: #7a9aae;
+    transition: .15s;
+}
+
+input::placeholder{
+    font-family: 'Merriweather', serif;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+    top: 10px;
+    left: 40px;
+}
+
+
+#errorMessage {
+    color: red;
+    font-size: 22px;
+    display: none;
+    left: 40px;
+}
+
+
+/* ------------------------Calc page CSS part------------------------------- */
+
+.center2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    /* background: white; */
+    background: #cfbed6a4;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+
+.center2 h1 {
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+form label{
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+form input {
+    padding: 10px, 5px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    background: none;
+}
+#btngrp{
+    padding: 0 20px;
+    
+}
+.btn1{
+    background: #724b83;
+}
+.btn1:hover{
+    
+    background: #7a9aae;
+    /* color: white; */
+}
+form #btngrp input {
+    width: 85px;
+    height: 50px;
+    border: 1px solid;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    justify-content: center;
+   
+margin: auto;
+}
+

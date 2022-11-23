@@ -1,0 +1,34 @@
+Part A of the assignment is on web page of Coffee Shop:
+Below are the major tags used in the assignment
+
+
+1. Favicon: It is a small image displayed on the left of the page title in the browser table.
+It can be created on site like https://www.favicon.cc 
+
+2. Table: Web developers can organize data into rows and columns using HTML tables.
+Each table cell is defined by a <td> and a </td> tag  	  td-table data
+Each table row starts with a <tr> and ends with a </tr> tag   tr-table row
+For table heading starts with <th> and ends with </th> tag    th-table headers
+
+3. Form: To gather user input, an HTML form is utilized. Most frequently, a server processes the user input.
+Text fields, checkboxes, radio buttons, submit buttons, and other types of input elements are all contained within the "form" element.
+
+4. Images: An image can be embedded in a web page using the HTML img> tag.
+Images are linked to web pages; they are not technically inserted into web pages. The referenced image is held in place by the img> tag.
+
+The img> tag has no closing tag, is empty, and only contains attributes.
+
+The img> tag must have the following two attributes:
+
+src - Defines the image's path.
+alt - Defines a different caption for the image
+
+5. Hyperlink: Hyperlinks in HTML are links.
+
+A link can be clicked to open a different document.
+
+The mouse arrow transforms into a tiny hand when you hover the cursor over a link.
+The important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+6. Button: The <button> tag defines a clickable button.
+We can specify the attribute for a <button> element.

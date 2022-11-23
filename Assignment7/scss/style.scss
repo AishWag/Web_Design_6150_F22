@@ -1,0 +1,144 @@
+@import 'config';
+@import 'visit';
+@import 'food';
+@import 'button';
+@import 'mobile';
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  //function to change text color
+  background-color: $primary-color;
+  color: set-text-color($primary-color);
+  
+}
+
+.header {
+  background-color: var(--col);
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 100px;
+  position: sticky;
+
+}
+
+.logo {
+  position: absolute;
+  padding: 0.8%;
+  width: 80px;
+  height: 80px;
+}
+
+
+.backgroundimage {
+  width: 100%;
+  height: 600px;
+  filter: brightness(70%);
+}
+
+.top-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 600px;
+}
+
+.title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: $font-title;
+  font-size: 180px;
+}
+
+.subtitle {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // color: black;
+  font-family: $font-title;
+  font-size: 30px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+}
+
+.second-container {
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+}
+
+.sc-title {
+  background-color: var(--col);
+  margin: 0px;
+  width: 100%;
+  height: 70px;
+  padding-top: 30px;
+  font-family: $font-title;
+  font-size: 30px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  color: $text-color;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.description {
+  text-align: center;
+  text-decoration: none;
+  font-family: $font-title;
+}
+
+.detailtag {
+  padding: 0px 40px 40px 20px;
+//nesting for command hover is done
+&:hover {
+  cursor: pointer;
+}
+}
+
+mark {
+  background-color: var(--col);
+  color: $text-color;
+}
+
+.footer {
+  background-color: var(--col);
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+.footertext {
+  align-items: center;
+  font-family: $font-title;
+  color: $text-color;
+  padding: 20px;
+}
+
+.footer-icons {
+  align-items: center;
+  padding: 20px;
+  padding-top: 120px;
+}

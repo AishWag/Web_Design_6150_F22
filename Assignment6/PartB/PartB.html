@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="PartB.css">
+    <script src="timer.js"></script>
+    <title>Stop Watch</title>
+</head>
+
+<body id="timer">
+    <div class="heading">
+        <label>STOP WATCH</label>
+    </div>
+    <div class="timeBar">
+        <table>
+            <tr>
+                <th class="time_slot" id="hr">00</th>
+                <th class="time_slot" id="min">00</th>
+                <th class="time_slot" id="sec">00</th>
+            </tr>
+            <tr>
+                <td class="heading_slot" id="Hours">Hours</td>
+                <td class="heading_slot" id="Minutes">Minutes</td>
+                <td class="heading_slot" id="Seconds">Seconds</td>
+            </tr>
+        </table>
+    </div>
+    <div class="buttonBar">
+        <button type="button" class="btn start">START</button>
+        <button type="button" disabled class="btn stop">STOP</button>
+        <button type="button" disabled class="btn reset">RESET</button>
+    </div>
+
+

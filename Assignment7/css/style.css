@@ -1,0 +1,247 @@
+:root {
+  --col: rgb(11, 7, 0);
+}
+
+.placestovisit {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  align-items: center;
+  background-color: var(--col);
+  font-family: "Merriweather", serif;
+  color: antiquewhite;
+}
+
+h2 {
+  margin: 0%;
+  text-align: center;
+  padding-top: 35px;
+  align-items: center;
+  letter-spacing: 5px;
+  color: antiquewhite;
+  font-family: "Merriweather", serif;
+}
+
+.image {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 50%;
+  margin: auto;
+  font-family: "Merriweather", serif;
+}
+.image img {
+  border: 7px solid rgb(101, 95, 27);
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Merriweather", serif;
+}
+
+.dontmiss {
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  background-color: var(--col);
+  font-family: "Merriweather", serif;
+  color: antiquewhite;
+}
+
+.flex-container {
+  display: flex;
+  background-color: rgb(70, 132, 193);
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.foodtoexplore {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  align-items: center;
+  background-color: var(--col);
+  font-family: "Merriweather", serif;
+  color: antiquewhite;
+}
+
+.suggestedplaces p {
+  font-size: 20px;
+}
+
+.btn-food, .btn-place {
+  display: inline-block;
+  width: 250px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px var(--col);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+}
+.btn-food:hover, .btn-place:hover {
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 5px -5px grey;
+  border: 1px solid var(--col);
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+}
+.btn-food img, .btn-place img {
+  width: 250px;
+  height: 250px;
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+}
+
+.btn-place {
+  background-color: rgba(241, 115, 115, 0.729);
+}
+
+.btn-food {
+  background-color: rgba(117, 117, 224, 0.755);
+}
+
+@media (max-width: 700px) {
+  body {
+    height: 400px;
+  }
+  body img {
+    display: none;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(223, 242, 250);
+  color: #333;
+}
+
+.header {
+  background-color: var(--col);
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 100px;
+  position: sticky;
+}
+
+.logo {
+  position: absolute;
+  padding: 0.8%;
+  width: 80px;
+  height: 80px;
+}
+
+.backgroundimage {
+  width: 100%;
+  height: 600px;
+  filter: brightness(70%);
+}
+
+.top-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 600px;
+}
+
+.title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Merriweather", serif;
+  font-size: 180px;
+}
+
+.subtitle {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+}
+
+.second-container {
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+}
+
+.sc-title {
+  background-color: var(--col);
+  margin: 0px;
+  width: 100%;
+  height: 70px;
+  padding-top: 30px;
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  color: antiquewhite;
+  align-items: center;
+  text-align: center;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.description {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+}
+
+.detailtag {
+  padding: 0px 40px 40px 20px;
+}
+.detailtag:hover {
+  cursor: pointer;
+}
+
+mark {
+  background-color: var(--col);
+  color: antiquewhite;
+}
+
+.footer {
+  background-color: var(--col);
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+.footertext {
+  align-items: center;
+  font-family: "Merriweather", serif;
+  color: antiquewhite;
+  padding: 20px;
+}
+
+.footer-icons {
+  align-items: center;
+  padding: 20px;
+  padding-top: 120px;
+}/*# sourceMappingURL=style.css.map */

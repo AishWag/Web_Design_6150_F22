@@ -1,0 +1,38 @@
+//inheritance placehodler selector
+%btn {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px var(--col);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: $font-title;
+
+    &:hover {
+        cursor: pointer;
+        border-radius: 25px;
+        box-shadow: 5px -5px grey;
+        border: 1px solid var(--col);
+        font-family: $font-title;
+        text-decoration: none;
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+        text-decoration: none;
+        font-family: $font-title;
+    }
+}
+
+.btn-place {
+    @extend %btn;
+    background-color: rgba(241, 115, 115, 0.729);
+}
+
+.btn-food {
+    @extend %btn;
+    background-color: rgba(117, 117, 224, 0.755);
+}

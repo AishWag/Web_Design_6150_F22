@@ -1,0 +1,51 @@
+body {
+    height: 1000px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: linear-gradient(to bottom right, rgba(156, 225, 208, 0.829), rgb(58, 72, 64));
+}
+
+.heading {
+    padding: 50px 690px;
+    font-family: 'Merriweather', serif;
+    font-size: larger;
+    letter-spacing: 15px;
+    color: rgb(51, 56, 55);
+}
+
+.heading label{
+    font-size: 40px;
+    padding-right: 40px;
+}
+
+.timeBar {
+    padding: 30px 700px;
+    font-family: 'Merriweather', serif;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 18px;
+  }
+
+.buttonBar {
+    padding: 10px 740px;
+    font-family: 'Merriweather', serif;
+    display: block;
+    width: 100%;
+}
+
+
+.btn {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(43, 46, 46);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
