@@ -1,4 +1,4 @@
-# WD_Assignment_10
+# Assignment10
 Assignment 10
 
 lab part-
