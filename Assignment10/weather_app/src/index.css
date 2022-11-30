@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(247, 247, 247) !important;
+  /* background-color: rgb(247, 247, 247) !important; */
+  background-image: linear-gradient(to right, rgba(181, 233, 216, 0.555) , rgba(177, 127, 172, 0.638));;
+  /* background-color: rgba(181, 233, 216, 0.555) !important */
 }
 
 code {
@@ -16,11 +18,15 @@ code {
 .card {
   display: inline-block !important;
   width: 50%;
-  color: rgb(101, 11, 235);
-  /* background-color: rgb(200, 61, 61); */
+  /* color: rgb(101, 11, 235); */
+  color: rgba(132, 209, 236, 0.964);
+  /* background-color: rgb(200, 61, 61) !important; */
 }
 
 h1 {
   text-decoration: underline;
-  color: rgb(0, 0, 0);
+
 }
+
+
+
