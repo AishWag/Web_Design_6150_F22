@@ -1,0 +1,201 @@
+body{
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.logincontainer{
+  padding: 120px 150px 143px 400px;
+  /* background-image: linear-gradient(to top, #e369df 0%, #c397b9 100%); */
+  /* background-image: linear-gradient(to top, #e8abe6 0%, #c397b9 100%); */
+
+  background-image: url("../public/Assets/mainimage.jpg");
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#emailHelp{
+  color: black;
+}
+
+.loginbtn{
+  background-color: purple;
+  border-color: purple;
+  color: white;
+}
+
+.loginbtn:hover{
+  background-color: #c397b9;
+  color: purple;
+}
+
+.registerlinklogin{
+  color: purple;
+}
+
+.registerlinklogin:hover{
+  color: blueviolet;
+}
+
+.contactbtn{
+  background-color: purple;
+  border-color: purple;
+  color: white;
+}
+
+.contactbtn:hover{
+  background-color: #c397b9;
+  color: purple;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* html{
+  background-image: linear-gradient(to top, #e369df 0%, #c397b9 100%);
+} */
+
+form{
+  padding-right: 300px;
+}
+
+.container h2{
+  padding-right: 320px;
+  padding-bottom: 30px;
+}
+
+.container .form-label{
+  padding-right: 1000px;
+}
+
+.btn-primary{
+  background-color: purple;
+  color: white;
+  border-color: purple;
+  width: 300px;
+}
+
+.btn-primary:hover{
+  background-color: #c397b9;
+  border-color: #c397b9;
+  color: purple;
+}
+
+.mb-3{
+  width: 300px;
+}
+
+.signintitle{
+  font-size: 50px;
+  color: purple;
+  letter-spacing: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 300px;
+}
+
+.text-right{
+  padding-right: 500px;
+}
+
+.signuptitle{
+  padding-right: 670px;
+}
+
+.signinlabel{
+  padding-right: 200px;
+}
+/* .container .form-text{
+  padding-right: 300px;
+} */
+
+/* .container .form-control{
+  width: 300px;
+} */
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 580px) {
+
+.mb-3{
+  width: 300px;
+}
+
+.logincontainer{
+  padding: 120px 150px 143px 100px;
+  /* background-image: linear-gradient(to top, #e369df 0%, #c397b9 100%); */
+  /* background-image: linear-gradient(to top, #e8abe6 0%, #c397b9 100%); */
+
+  background-image: url("../public/Assets/mainimage.jpg");
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.signupredirect{
+  width: 200px;
+}
+
+.signin{
+  padding-left: 100px;
+}
+
+.signintitle{
+  font-size: 40px;
+  color: purple;
+  letter-spacing: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 300px;
+}
+
+.text-right{
+  padding-right: 0px;
+  width: 200px;
+}
+
+
+}

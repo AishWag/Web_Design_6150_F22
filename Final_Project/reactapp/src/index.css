@@ -1,0 +1,450 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.team {
+  /* background-color: rgb(227, 216, 232); */
+  /* border-radius: 30px;
+  margin: 0 40px; */
+  height: 100vh;
+}
+
+.team1 {
+  display: inline-block;
+  padding: 40px 10px 10px 70px;
+}
+
+.titletext {
+  align-items: center;
+  text-align: center;
+  font: Arial;
+  /* z-index: -1; */
+}
+
+.rounded-circle {
+  width: 300px;
+  height: 300px;
+}
+
+.team-text {
+  padding: 20px 70px 0px 0px;
+  align-items: center;
+  text-align: center;
+}
+
+/* .progressbar{
+  background-color: violet !important;
+} */
+
+.pbtitle {
+  color: rgb(194, 137, 224);
+}
+
+.servicescards {
+  display: inline-block;
+  padding-left: 45px;
+  padding-top: 80px;
+}
+
+.ExploreServices {
+  height: 100vh;
+  padding-top: 0px;
+}
+
+.servicescard {
+  width: 25rem;
+  transition: transform .2s;
+  /* Animation */
+}
+
+.servicescard:hover {
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.cardimg {
+  height: 22rem;
+  width: 25rem;
+}
+
+.customerreviews {
+  height: 100vh;
+}
+
+.carousel {
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 10px;
+  padding-top: 40px;
+}
+
+.carouselh3 {
+  color: aliceblue;
+}
+
+.carouselp {
+  color: aliceblue;
+}
+
+.reviewimg {
+  height: 75vh;
+}
+
+.detailsimage {
+  height: 450px;
+  width: 450px;
+  /* display: inline-block; */
+}
+
+.Details {
+  height: 100vh;
+}
+
+.detailsimg {
+  display: inline-block;
+  padding-left: 120px;
+}
+
+.explain {
+  display: inline-block;
+  padding-left: 60px;
+}
+
+.divupfooter {
+  height: 50vh;
+  background-image: linear-gradient(to bottom right, rgb(116, 7, 133), rgb(205, 168, 225));
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.button {
+  background-color: rgb(255, 255, 255);
+  color: purple;
+  border-radius: 20px;
+  height: 50px;
+  width: 200px;
+  border: rgb(156, 130, 156);
+}
+
+.mainheaderbtn {
+  background-color: purple;
+  color: white;
+  border-radius: 20px;
+  height: 50px;
+  width: 200px;
+  border: rgb(156, 130, 156);
+}
+
+.logoutbtn {
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  border: rgb(156, 130, 156);
+  margin-left: 800px;
+  margin-top: 5px;
+  width: 100px;
+  height: 30px;
+}
+
+.showalllink {
+  color: purple;
+}
+
+.showalllink:hover {
+  color: blueviolet;
+}
+
+.btndivupfooter {
+  padding-top: 50px;
+}
+
+.footer {
+  height: 13vh;
+  text-align: center;
+  align-items: center;
+}
+
+.Servicesheader {
+  background-image: linear-gradient(to bottom right, rgb(116, 7, 133), rgb(205, 168, 225));
+  height: 35vh;
+  text-align: left;
+  align-items: left;
+  padding-left: 30px;
+  padding-top: 30px;
+  color: white;
+}
+
+
+.team_meals_header {
+  padding: 30px 25px;
+  width: 50%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+
+}
+
+.team_meals_header p {
+  padding-left: 4px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.cardwrapper {
+  display: flex;
+  /* padding-left: 170px; */
+
+}
+
+.carouselcard {
+  padding-left: 20px;
+}
+
+
+.footerservices {
+  height: 23vh;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, rgb(116, 7, 133), rgb(205, 168, 225));
+  padding-top: 30px;
+  color: white;
+
+}
+
+.Teammealscard_wrapper {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+.Teammealscard_wrapper .card {
+  display: flex;
+  border-radius: 10px;
+  margin: 0px 50px;
+  height: 300px;
+}
+
+.Teammealscard_wrapper .card img {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.descbtn {
+  color: purple;
+  /* background-color: rgb(243, 237, 237); */
+}
+
+.mapcontainer {
+  width: 50%;
+  height: 60vh;
+  margin-top: 70px;
+  /* margin-left: 50px; */
+  display: inline-block;
+}
+
+.contactform {
+  display: inline-block;
+  padding-left: 80px;
+  margin-top: 70px;
+  width: 50%;
+}
+
+.desc {
+  display: inline-block;
+}
+
+.desccard {
+  width: 100%;
+  margin-left: 130px;
+  margin-top: 50px;
+}
+
+.descimg {
+  height: 500px;
+}
+
+.mainimage {
+  /* z-index: 0; */
+  width: 100%;
+  height: 60vh;
+  margin: 0;
+  padding: 0%;
+}
+
+.signin {
+  padding: 50px 120px 40px 500px;
+  /* background-image: linear-gradient(to top, #e8abe6 0%, #c397b9 100%); */
+  background-image: url("../public/Assets/mainimage.jpg");
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.contactusform {
+  padding: 30px 80px 30px 400px;
+}
+
+.contactbtn {
+  background-color: purple;
+
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.carddiv {
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dbimg {
+  height: 200px;
+  width: 270px;
+  padding-bottom: 10px;
+}
+
+.dbbutton {
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: purple;
+}
+
+.meetustable {
+  width: 80%;
+  margin: 20px 20px 20px 150px;
+}
+
+.meetusmap {
+  margin-left: 130px;
+  width: 40%;
+}
+
+
+
+/*Media Queries*/
+
+@media (max-width: 580px) {
+  .servicescards {
+    display: inline-block;
+    padding-left: 45px;
+    padding-top: 80px;
+  }
+
+  .servicescard {
+    width: 25rem;
+  }
+
+  .ExploreServices {
+    height: 270vh;
+    padding-top: 0px;
+  }
+
+  .team {
+    /* background-color: rgb(227, 216, 232); */
+    /* border-radius: 30px;
+    margin: 0 40px; */
+    height: 150vh;
+  }
+
+  .team1 {
+    display: inline-block;
+    padding: 40px 10px 10px 200px;
+  }
+
+  .rounded-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Teammealscard_wrapper {
+    display: grid;
+    grid-template-rows: 1fr max-content;
+
+  }
+
+  .Teammealscard_wrapper .card {
+    display: inline;
+    border-radius: 10px;
+    margin: 20px 120px;
+    height: 300px;
+    width: 300px;
+  }
+
+  .Teammealscard_wrapper .card img {
+    border-radius: 10px;
+    height: 100px;
+  }
+
+  .logoutbtn {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .detailsimage {
+    height: 250px;
+    width: 250px;
+    /* display: inline-block; */
+  }
+
+  .Details {
+    height: 120vh;
+  }
+
+  .detailsimg {
+    display: inline-block;
+    padding-left: 120px;
+    padding-top: 30px;
+  }
+
+  .explain {
+    display: inline-block;
+    padding-left: 60px;
+  }
+
+  .contactusform {
+    padding: 30px 80px 30px 100px;
+  }
+
+  .contactbtn {
+    background-color: purple;
+
+  }
+
+  .meetustable {
+    width: 70%;
+    margin: 20px 20px 20px 80px;
+  }
+
+  .meetusmap {
+    /* margin-left: 130px; */
+    width: 80%;
+  }
+
+
+
+}
